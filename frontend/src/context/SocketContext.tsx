@@ -23,7 +23,7 @@ export const SocketProvider = ({ children }: Props) => {
   const socket = useMemo(() => {
     if (!userData?._id) return null;
 
-    return io("http://localhost:8000", {
+    return io("https://intellmeet-ai-powered-video-calling.onrender.com", {
       query: {
         userId: userData._id,
       },
