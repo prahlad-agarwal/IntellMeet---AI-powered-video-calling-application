@@ -20,7 +20,7 @@ export const useSocketStore = create<SocketStore>((set, get) => ({
     // prevent duplicate connections
     if (get().socket?.connected) return;
 
-    const socket = io("http://localhost:8000", {
+    const socket = io("https://intellmeet-ai-powered-video-calling.onrender.com", {
       query: {
         userId: userData._id,
       },
