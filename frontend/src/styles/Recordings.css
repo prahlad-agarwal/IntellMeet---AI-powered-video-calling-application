@@ -1,0 +1,53 @@
+.rec-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.rec-card:hover {
+  border-color: var(--border2);
+}
+.rec-thumb {
+  width: 80px;
+  height: 52px;
+  border-radius: 8px;
+  background: var(--bg3);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.rec-play {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(79, 142, 247, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rec-info {
+  flex: 1;
+  min-width: 0;
+}
+.rec-title {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.rec-meta {
+  font-size: 11px;
+  color: var(--text2);
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.rec-duration {
+  color: var(--accent);
+}

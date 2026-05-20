@@ -1,0 +1,122 @@
+.lobby-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+}
+.lobby-preview {
+  width: 400px;
+  height: 220px;
+  background: var(--card);
+  border-radius: var(--radius2);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cam-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--card2);
+  border: 3px solid var(--border2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text2);
+}
+.lobby-name-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  backdrop-filter: blur(4px);
+}
+.lobby-controls {
+  display: flex;
+  gap: 12px;
+}
+.ctrl-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--border2);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.15s;
+  color: var(--text);
+}
+.ctrl-btn:hover {
+  background: var(--card2);
+}
+.ctrl-btn.off {
+  background: rgba(242, 95, 92, 0.15);
+  border-color: rgba(242, 95, 92, 0.3);
+  color: var(--red);
+}
+.lobby-join-btn {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #fff;
+  padding: 12px 36px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s;
+  font-family: inherit;
+}
+.lobby-join-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+.lobby-info {
+  text-align: center;
+}
+.lobby-info h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.lobby-info p {
+  font-size: 13px;
+  color: var(--text2);
+}
+.participants-waiting {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text2);
+  margin-top: 6px;
+}
+.participant-avatars {
+  display: flex;
+}
+.participant-avatars .av {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--bg);
+  font-size: 9px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -6px;
+}

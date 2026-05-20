@@ -1,0 +1,113 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap'); */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg: #0a0d14;
+  --bg2: #111520;
+  --bg3: #171c2e;
+  --card: #1a2035;
+  --card2: #1e2640;
+  --accent: #4f8ef7;
+  --accent2: #7c5cfc;
+  --green: #22d06e;
+  --red: #f25f5c;
+  --amber: #f7b731;
+  --text: #e8eaf6;
+  --text2: #8b92b0;
+  --text3: #545d7e;
+  --border: rgba(255, 255, 255, 0.06);
+  --border2: rgba(255, 255, 255, 0.12);
+  --radius: 12px;
+  --radius2: 18px;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 600px;
+  overflow: hidden;
+}
+.app {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 56px 1fr;
+  height: 600px;
+}
+
+/* Topbar */
+.topbar {
+  grid-column: 1/-1;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 16px;
+  z-index: 10;
+}
+.logo {
+  font-family: "Syne", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+  margin-right: 8px;
+}
+.topbar-tabs {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+}
+.ttab {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text2);
+  transition: 0.15s;
+  border: none;
+  background: none;
+}
+.ttab.active,
+.ttab:hover {
+  background: var(--card);
+  color: var(--text);
+}
+.role-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: auto;
+}
+.role-admin {
+  background: rgba(124, 92, 252, 0.15);
+  color: #a78bfa;
+  border: 1px solid rgba(124, 92, 252, 0.25);
+}
+.role-user {
+  background: rgba(79, 142, 247, 0.15);
+  color: #7db3ff;
+  border: 1px solid rgba(79, 142, 247, 0.25);
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
