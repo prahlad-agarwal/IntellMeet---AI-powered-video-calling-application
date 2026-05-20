@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const Meetings = () => {
   const navigate = useNavigate();
   const { meetings } = useGetMeeting();
-  const url = "http://localhost:5173/lobby";
+  const url = "https://intellmeet-ai-powered-video-calling.vercel.app/lobby";
 
   const copyText = async () => {
     await navigator.clipboard.writeText(url);
