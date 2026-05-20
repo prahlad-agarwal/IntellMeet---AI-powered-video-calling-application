@@ -5,5 +5,5 @@ type AuthStore = {
 };
 
 export const useAuthStore = create<AuthStore>(() => ({
-  serverUrl: "http://localhost:8000",
+  serverUrl: "https://intellmeet-ai-powered-video-calling.onrender.com",
 }));
