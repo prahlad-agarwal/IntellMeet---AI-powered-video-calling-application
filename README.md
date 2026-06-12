@@ -3,8 +3,7 @@
 > Production-Grade Full-Stack MERN Application with Real-Time Video Meetings, AI Meeting Intelligence, and Team Collaboration.
 
 <p align="center">
-  <img src="./assets/home-page.png" alt="IntellMeet Dashboard" width="900"/>
-</p>
+  <img src="./assets/home-page.png" alt="IntellMeet Dashboard" width="900"/></p>
 
 ---
 
@@ -263,8 +262,6 @@ Planned improvements include:
 - CI/CD implementation
 
 ---
-
-# 📂 Project Structure
 
 # 📂 Project Structure
 
